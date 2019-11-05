@@ -15,4 +15,4 @@ This program tell us the basics of the WebGL pipeline such as passing values to 
 
 |Single Dot|Multiple Dots|
 |---|---|
-|![]()|![](https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Single%2CMultiple%20dots%20with%20mouse%20event/MultipleDots.PNG)|
+|![](https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Single%2CMultiple%20dots%20with%20mouse%20event/SingleDot.PNG)|![](https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Single%2CMultiple%20dots%20with%20mouse%20event/MultipleDots.PNG)|
