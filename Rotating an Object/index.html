@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Rotating Shapes</title>
+</head>
+
+<body onload="main()">
+
+	<style> 
+		#gui { position: absolute; top: 200px; left: 550px }
+	</style>
+    <canvas id="webgl" width="512" height="512" style="background-color: black">
+        Please use a browser that supports "canvas"
+    </canvas>
+    <script id="vertex-shader" type="x-shader/x-vertex">
+        attribute vec4 a_Position; 
+        uniform mat4 transformationMatrix; 
+        uniform mat4 translationMatrix; 
+        void main() { 
+        	gl_Position = translationMatrix*transformationMatrix *  a_Position; 
+        }
+    </script>
+    <script id="fragment-shader" type="x-shader/x-fragment">
+        precision mediump float; void main() { gl_FragColor = vec4( 3.0, 3.0, 0.0, 1.0 ); }
+    </script>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/initShaders.js"></script>
+    <script src="../lib/flatten.js"></script>
+    <script src="../lib/gl-matrix-min.js"></script>
+    <script src="../lib/modelVewMatrixStack.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="../lib/dat.gui.min.js"></script>
+    <script src="driver.js"></script>
+</body>
+
+</html>
