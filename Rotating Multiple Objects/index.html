@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multiple Shapes</title>
+  </head>
+ 
+  <body onload="main()">
+    <canvas id="webgl" width="600" height="600" style="border: 1px solid black">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+	<style> 
+		#gui { position: absolute; top: 200px; left: 700px }
+	</style>
+
+	<script id="vertex-shader" type="x-shader/x-vertex">		
+		attribute vec4 a_Position;
+		attribute vec4 a_Color;
+		varying vec4 colorOut;
+		uniform mat4 transformationMatrix;
+		void
+		main()
+		{
+		    gl_Position = transformationMatrix * a_Position;
+		    colorOut = a_Color;
+		}
+	</script>
+
+	<script id="fragment-shader" type="x-shader/x-fragment">
+		precision mediump float;
+		varying vec4 colorOut;
+		void
+		main()
+		{
+		    gl_FragColor = colorOut;
+		}
+	</script>
+	  
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+	<script src="../lib/initShaders.js"></script>
+	<script src="../lib/flatten.js"></script>
+	<script src="../lib/gl-matrix-min.js"></script>
+	<script src="../lib/modelVewMatrixStack.js"></script>
+	<script type="text/javascript" src="../lib/dat.gui.min.js"></script>
+    <script src="driver.js"></script>
+  </body>
+</html>
