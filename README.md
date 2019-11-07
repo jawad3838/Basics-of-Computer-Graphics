@@ -24,3 +24,10 @@ This program tells us the basics of passing colors to fragments that make up a p
   <img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Triangle%2CSquare%20with%20colors/Triangle_Quad.gif"
        width = "600"\>
 </p>
+
+### Rotating objects
+This program covers the basics of using the model-view matrix and basic transformations (such as translation, rotation)
+
+<p align="center">
+  <img src="" width="600"\>
+</p>
