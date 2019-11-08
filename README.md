@@ -31,3 +31,10 @@ This program covers the basics of using the model-view matrix and basic transfor
 <p align="center">
   <img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Rotating%20an%20Object/RotatingShapes.gif" \>
 </p>
+
+### Rotating Multiple Objects Together
+This program tells us how to use the model-view matrix stack in order to perform multiple transformation operations at once.
+
+<p align="center">
+  <img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Rotating%20Multiple%20Objects/RotatingMultipleObjects.gif" \>
+</p>
