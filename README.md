@@ -38,3 +38,25 @@ This program tells us how to use the model-view matrix stack in order to perform
 <p align="center">
   <img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Rotating%20Multiple%20Objects/RotatingMultipleObjects.gif" \>
 </p>
+
+### Getting Started with Animations - Projections
+This program tell us how to move the direction of the camera and view moving objects from different angles.
+
+<table>
+  <tr>
+    <td><b>Standard View Point (Viewing Out of Screeen)</b></td>
+    <td><b>Moving Out of Screen</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections/StandardRotation.gif" width="400" \></td>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections/ShiftInZ.gif" width="400"\></td>
+  </tr>
+  <tr>
+    <td><b>Moving Along X-axis</b></td>
+    <td><b>Moving Along Y-axis</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections/ShiftInX.gif" width="400"\></td>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections/ShiftInY.gif" width="400"\></td> 
+  </tr>
+</table>
