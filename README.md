@@ -44,16 +44,16 @@ This program tell us how to move the direction of the camera and view moving obj
 
 <table>
   <tr>
-    <td><b>Standard View Point (Viewing Out of Screeen)</b></td>
-    <td><b>Moving Out of Screen</b></td>
+    <td align="center"><b>Standard View Point (Viewing Out of Screeen)</b></td>
+    <td align="center"><b>Moving Out of Screen</b></td>
   </tr>
   <tr>
     <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections/StandardRotation.gif" width="400" \></td>
     <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections/ShiftInZ.gif" width="400"\></td>
   </tr>
   <tr>
-    <td><b>Moving Along X-axis</b></td>
-    <td><b>Moving Along Y-axis</b></td>
+    <td align="center"><b>Moving Along X-axis</b></td>
+    <td align="center"><b>Moving Along Y-axis</b></td>
   </tr>
   <tr>
     <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections/ShiftInX.gif" width="400"\></td>
