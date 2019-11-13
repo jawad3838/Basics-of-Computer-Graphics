@@ -60,3 +60,25 @@ This program tell us how to move the direction of the camera and view moving obj
     <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections/ShiftInY.gif" width="400"\></td> 
   </tr>
 </table>
+
+### Viewing Objects at Different Distances from Camera - Projections_Advanced
+This program tells us how to implement parallel projection for two objects that are at different distances from the camera. The concept of perceiving depth is explained here.
+
+<table>
+  <tr>
+    <td align="center"><b>Standard View Point</b></td>
+    <td align="center"><b>Shift in X and Y</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections_Advanced/StandardView.gif" width="400" \></td>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections_Advanced/ShiftInX%26Y.gif" width="400"\></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Shift in X and Z</b></td>
+    <td align="center"><b>Shift in Y and Z</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections_Advanced/ShiftInX%26Z.gif" width="400"\></td>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections_Advanced/ShiftInY%26Z.gif" width="400"\></td> 
+  </tr>
+</table>
