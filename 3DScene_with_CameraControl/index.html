@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <title>3D-Scene Movement</title>
+
+  </head>
+
+  <body onload="main()">
+
+    <canvas id="webgl" width="350" height="350">
+
+    Please use a browser that supports "canvas"
+
+    </canvas>
+
+               
+
+                <script id="vertex-shader" type="x-shader/x-vertex">                    
+
+                                attribute vec4 a_Position;
+
+                                attribute vec4 a_Color;
+
+                                varying vec4 colorOut;
+
+                                uniform mat4 u_mvMatrix;
+
+                                uniform mat4 u_pMatrix;
+
+                                uniform mat4 u_nMatrix;
+
+                                attribute vec4 a_normal;
+
+                                uniform vec3 u_LightDir;
+
+                                uniform vec3 u_LightColor;
+
+                                void
+
+                                main()
+
+                                {
+
+                                                vec4 transformedNormal = u_nMatrix * a_normal;
+
+                                                vec3 normal = normalize(transformedNormal.xyz);
+
+                                                float nl = max(dot(normal, u_LightDir), 0.0);
+
+                                    gl_Position = u_pMatrix * u_mvMatrix * a_Position;
+
+                                    colorOut = vec4(u_LightColor * vec3(a_Color) * nl, 1.0);
+
+                                }
+
+                </script>
+
+ 
+
+                <script id="fragment-shader" type="x-shader/x-fragment">
+
+                                precision mediump float;
+
+                                varying vec4 colorOut;
+
+                                void
+
+                                main()
+
+                                {
+
+                                    //gl_FragColor = vec4( 1.0, 1.0, 0.0, 1.0 );
+
+                                    gl_FragColor = colorOut;
+
+                                }
+
+                </script>
+
+                 
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/initShaders.js"></script>
+    <script src="../lib/flatten.js"></script>
+    <script src="../lib/gl-matrix-min.js"></script>
+	<script src="../lib/modelVewMatrixStack.js"></script>
+    <script src="driver.js"></script>
+
+  </body>
+
+</html>
