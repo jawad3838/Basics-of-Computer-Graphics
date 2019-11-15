@@ -82,3 +82,17 @@ This program tells us how to implement parallel projection for two objects that 
     <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/Projections_Advanced/ShiftInY%26Z.gif" width="400"\></td> 
   </tr>
 </table>
+
+### How to work with Lights in a Scene - 3DScene_With_CameraControl
+This program tells us how to introduce lights in our 3D scene and how to manipulate them with changing environments. You can control the camera in this program using the arrow keys.
+
+<table>
+  <tr>
+    <td align="center"><b>Default View</b></td>
+    <td align="center"><b>Effect of Changing Light Conditions on all 3 cubes</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/3DScene_with_CameraControl/DefaultView.gif"           width="400" \></td>
+    <td><img src="https://github.com/jawad3838/Basics-of-Computer-Graphics/blob/master/3DScene_with_CameraControl/ChangingLightConditions.gif" width="400" \></td>
+  </tr>
+</table>
